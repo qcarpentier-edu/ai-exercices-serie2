@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>serie_2_correction</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+        <servlet-name>ChampionInfoServlet</servlet-name>
+        <servlet-class>be.condorcet.ChampionInfoServlet</servlet-class>
+        
+        <!-- Définition des paramètres du champion -->
+        <init-param>
+            <param-name>championName</param-name>
+            <param-value>Yasuo</param-value>
+        </init-param>
+        <init-param>
+            <param-name>championRole</param-name>
+            <param-value>Assassin</param-value>
+        </init-param>
+        <init-param>
+            <param-name>championDifficulty</param-name>
+            <param-value>Difficile</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ChampionInfoServlet</servlet-name>
+        <url-pattern>/champion-info</url-pattern>
+    </servlet-mapping>
+</web-app>

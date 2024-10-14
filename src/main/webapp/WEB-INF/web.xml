@@ -28,4 +28,24 @@
         <servlet-name>ChampionInfoServlet</servlet-name>
         <url-pattern>/champion-info</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AgentListServlet</servlet-name>
+        <servlet-class>be.condorcet.AgentListServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AgentListServlet</servlet-name>
+        <url-pattern>/agent-list</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>UpdateAgent</servlet-name>
+        <servlet-class>be.condorcet.UpdateAgent</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateAgent</servlet-name>
+        <url-pattern>/update-agent</url-pattern>
+    </servlet-mapping>
 </web-app>
